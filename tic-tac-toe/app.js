@@ -42,7 +42,7 @@ function cellClicked (){
         return
     }
     cellUpdate(this,cellIndex);
-    changePlayer();
+    /*changePlayer(); */
     checkWin();
 
 }
