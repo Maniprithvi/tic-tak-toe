@@ -1,0 +1,44 @@
+*, *::after,*::after{
+    box-sizing: border-box;
+}
+:root{
+    --cell-size:100px;
+    --mark-size:cal(var(--cell-size)*.9)
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.game-container{
+    text-align: center;
+    font-family:"permenent marker", cursive;
+}
+h3{
+    font-size: 38px;
+    font-weight: 700;
+}
+.gameBoard{
+    width: 100vw;
+    height: vh;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns:  repeat( 3, auto);
+}
+ .cell{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    color: blue;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+     border-radius: 10px; 
+    
+ }
